@@ -1,7 +1,6 @@
 const db = require("../data/db");
 const { error } = require("../utils/helpers");
 
-
 function cargarLibro(req, res, next) {
   const id = Number(req.params.id);
   if (!Number.isInteger(id)) return error(res, 400, "El id debe ser un número entero");

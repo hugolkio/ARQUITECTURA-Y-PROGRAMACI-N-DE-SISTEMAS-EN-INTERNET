@@ -18,7 +18,7 @@ npm start
 
 npm run dev
 
-🌐 Una vez iniciado, el servidor queda disponible en http://localhost:3000.
+Una vez iniciado, el servidor queda disponible en http://localhost:3000.
 
 🗂️ Estructura del proyecto
 src/
@@ -31,16 +31,16 @@ src/
 ├── middlewares/         # cargarLibro, notFound, errorHandler
 └── utils/
     └── helpers.js       # Validaciones y funciones auxiliares
-🏗️ Arquitectura
+Arquitectura
 
 El proyecto sigue una separación por capas:
 
 Capa	Responsabilidad
-🛣️ Routes	Mapean URLs y métodos HTTP a su controlador
-🧠 Controllers	Contienen la lógica de negocio de cada endpoint
-🛡️ Middlewares	Gestionan la carga de recursos, rutas inexistentes y errores
-💾 Data	Persistencia en memoria (los datos se pierden al reiniciar el servidor)
-🔧 Utils	Validaciones y utilidades compartidas
-📝 Notas
-⚠️ Los datos se almacenan en memoria, por lo que no persisten entre reinicios.
-🚨 El middleware errorHandler centraliza la gestión de errores y notFound responde a rutas no definidas.
+Routes	Mapean URLs y métodos HTTP a su controlador
+Controllers	Contienen la lógica de negocio de cada endpoint
+Middlewares	Gestionan la carga de recursos, rutas inexistentes y errores
+Data	Persistencia en memoria (los datos se pierden al reiniciar el servidor)
+Utils	Validaciones y utilidades compartidas
+Notas
+Los datos se almacenan en memoria, por lo que no persisten entre reinicios.
+El middleware errorHandler centraliza la gestión de errores y notFound responde a rutas no definidas.

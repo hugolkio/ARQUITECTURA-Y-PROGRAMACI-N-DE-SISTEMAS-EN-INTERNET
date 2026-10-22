@@ -4,7 +4,6 @@ function notFound(req, res) {
   error(res, 404, `Ruta no encontrada: ${req.method} ${req.originalUrl}`);
 }
 
-
 function errorHandler(err, req, res, next) {
   if (err.type === "entity.parse.failed") {
     return error(res, 400, "El body no es un JSON válido");

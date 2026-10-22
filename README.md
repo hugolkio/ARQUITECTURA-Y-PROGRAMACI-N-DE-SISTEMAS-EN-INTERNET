@@ -11,6 +11,7 @@ npm install
 ▶️ Ejecución
 bash
 # Producción
+npm express
 npm start
 
 # Desarrollo (recarga automática al guardar cambios)

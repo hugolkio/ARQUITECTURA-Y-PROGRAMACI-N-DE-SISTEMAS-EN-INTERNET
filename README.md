@@ -11,10 +11,11 @@ npm install
 ▶️ Ejecución
 bash
 # Producción
-npm express, 
+
 npm start
 
 # Desarrollo (recarga automática al guardar cambios)
+
 npm run dev
 
 🌐 Una vez iniciado, el servidor queda disponible en http://localhost:3000.

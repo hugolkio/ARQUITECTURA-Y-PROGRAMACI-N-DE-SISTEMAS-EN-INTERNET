@@ -1,5 +1,3 @@
-// "Base de datos" en memoria. Se comparte entre todos los módulos
-// porque Node cachea los módulos: todos reciben el mismo objeto.
 const db = {
   libros: [
     { id: 1, titulo: "Clean Code", autor: "Robert C. Martin", año: 2008, disponible: true },
@@ -11,7 +9,6 @@ const db = {
     { id: 1, libroId: 3, usuario: "Ana", fechaPrestamo: "2026-10-01", fechaDevolucion: null },
   ],
 
-  // Contadores independientes: nunca se reutilizan ids de libros borrados
   siguienteLibroId: 4,
   siguientePrestamoId: 2,
 };

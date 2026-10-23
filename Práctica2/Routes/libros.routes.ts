@@ -19,4 +19,3 @@ router.post("/:id/prestar", cargarLibro, prestamos.prestar);
 router.post("/:id/devolver", cargarLibro, prestamos.devolver);
 
 module.exports = router;
-

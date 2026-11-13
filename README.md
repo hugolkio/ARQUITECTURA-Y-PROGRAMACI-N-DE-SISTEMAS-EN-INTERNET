@@ -1,46 +1,26 @@
-📚 API de Biblioteca
+# NebrijaInternet
 
-API REST para la gestión de una biblioteca, desarrollada con Node.js y Express.
+Repositorio donde voy subiendo las prácticas de la asignatura de desarrollo de APIs con **Node.js** y **TypeScript**. Cada carpeta es una práctica independiente, con su propio `package.json`.
 
-✅ Requisitos previos
-🟢 Node.js 18.11 o superior
-📦 npm
-🚀 Instalación
-bash
+## Tecnologías
+
+- Node.js y TypeScript
+- Express (API REST)
+- MongoDB (driver oficial `mongodb`)
+- GraphQL
+
+## Cómo ejecutar una práctica
+
+Entra en la carpeta de la práctica que quieras probar e instala las dependencias:
+
+```bash
+cd 03MongoAPIrest
 npm install
-▶️ Ejecución
-bash
-# Producción
-
-npm start
-
-# Desarrollo (recarga automática al guardar cambios)
-
 npm run dev
+```
 
-Una vez iniciado, el servidor queda disponible en http://localhost:3000.
+Las prácticas que usan MongoDB necesitan una base de datos y, en las más recientes, un archivo `.env` (hay un `.env.example` de ejemplo). Las instrucciones concretas están en el README de cada carpeta cuando lo tiene.
 
-🗂️ Estructura del proyecto
-src/
-├── server.js            # Punto de entrada: inicia el servidor
-├── app.js               # Configuración de Express y middlewares globales
-├── data/
-│   └── db.js            # Almacenamiento en memoria y contadores de id
-├── routes/              # Definición de rutas y métodos HTTP
-├── controllers/         # Lógica de negocio de cada endpoint
-├── middlewares/         # cargarLibro, notFound, errorHandler
-└── utils/
-    └── helpers.js       # Validaciones y funciones auxiliares
-Arquitectura
+## Autor
 
-El proyecto sigue una separación por capas:
-
-Capa	Responsabilidad
-Routes	Mapean URLs y métodos HTTP a su controlador
-Controllers	Contienen la lógica de negocio de cada endpoint
-Middlewares	Gestionan la carga de recursos, rutas inexistentes y errores
-Data	Persistencia en memoria (los datos se pierden al reiniciar el servidor)
-Utils	Validaciones y utilidades compartidas
-Notas
-Los datos se almacenan en memoria, por lo que no persisten entre reinicios.
-El middleware errorHandler centraliza la gestión de errores y notFound responde a rutas no definidas.
+Hugo Fernández Álvarez · Nebrija

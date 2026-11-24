@@ -1,0 +1,15 @@
+export type LibroT = {
+    id: number,
+    titulo: string,
+    autor: string,
+    año: number,
+    disponible: boolean
+}
+
+export type PrestamoT = {
+    id: number,
+    libroId: number,
+    usuario: string,
+    fechaPrestamo: string,
+    fechaDevolucion: string | null
+}

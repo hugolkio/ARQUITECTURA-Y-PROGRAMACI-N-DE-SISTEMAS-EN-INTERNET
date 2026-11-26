@@ -1,4 +1,4 @@
-export type LibroT = {
+export type LibroT = { //libro es un objeto
     id: number,
     titulo: string,
     autor: string,

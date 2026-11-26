@@ -4,7 +4,7 @@ import prestamosRoutes from "./routes/prestamos.routes.js";
 import estadisticasRoutes from "./routes/estadisticas.routes.js";
 
 
-const app = express();
+const app = express(); //Crea la aplicación del servidor
 
 app.use(express.json()); //middleware
 

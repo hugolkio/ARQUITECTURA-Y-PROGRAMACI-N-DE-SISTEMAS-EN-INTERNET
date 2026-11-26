@@ -30,7 +30,7 @@ export const getLibros = (
     req: Request,
     res: Response
 ) => {
-    res.json(libros);
+    res.json(libros); //responde con la lista completa en JSON
 }
 
 export const getLibroWithID = (

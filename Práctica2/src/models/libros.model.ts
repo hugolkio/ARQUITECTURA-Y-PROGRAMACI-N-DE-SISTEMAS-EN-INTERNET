@@ -11,5 +11,5 @@ export type PrestamoT = {
     libroId: number,
     usuario: string,
     fechaPrestamo: string,
-    fechaDevolucion: string | null
+    fechaDevolucion: string | null  //Mientras el libro no se devuelve, fechaDevolucion es null
 }

@@ -6,7 +6,7 @@ import { devolverLibro, getHistorialLibro, prestarLibro } from "../controllers/p
 const router = Router();
 
 
-router.get("/", getLibros);
+router.get("/", getLibros);  //método + dirección + función que atiende
 router.post("/", createLibro);
 router.get("/:id", getLibroWithID);
 router.put("/:id", replaceLibro);

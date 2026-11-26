@@ -1,4 +1,4 @@
-import { Router } from "express";
+import { Router } from "express"; //mini servidor donde agrupa rutas
 import { createLibro, deleteLibro, getLibros, getLibroWithID, replaceLibro, changeLibro } from "../controllers/libros.controller.js";
 import { devolverLibro, getHistorialLibro, prestarLibro } from "../controllers/prestamos.controller.js";
 

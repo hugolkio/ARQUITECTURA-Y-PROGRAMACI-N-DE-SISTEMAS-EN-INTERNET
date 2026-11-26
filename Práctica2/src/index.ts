@@ -8,7 +8,7 @@ const app = express(); //Crea la aplicación del servidor
 
 app.use(express.json()); //middleware. Sin esta línea, req.body estaría vacío.
 
-app.use("/libros", librosRoutes);
+app.use("/libros", librosRoutes); //las direcciones que empiecen por /libros las atiende librosRoutes
 app.use("/prestamos", prestamosRoutes);
 app.use("/estadisticas", estadisticasRoutes);
 

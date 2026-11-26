@@ -42,7 +42,7 @@ export const getLibroWithID = (
     const libro = findLibro(id, res);
 
     if (libro) {
-        res.json(libro);
+        res.json(libro); //aquí simplemente no se hace nada más, si existe, se envía.
     }
 }
 

@@ -3,7 +3,7 @@ import { changeLibros, libros } from "../data/libros.data.js";
 import type { LibroT } from "../models/libros.model.js";
 
 
-const findLibro = (id: number, res: Response) => {
+const findLibro = (id: number, res: Response) => { //busca un libro por id, recorre la lista y devuelve el primer libro cuyo id coincide
 
     const libro = libros.find(x => x.id === id);
 

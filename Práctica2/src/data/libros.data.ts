@@ -11,7 +11,7 @@ export let prestamos: PrestamoT[] = [
     { id: 1, libroId: 3, usuario: "Ana", fechaPrestamo: "2026-10-01", fechaDevolucion: null }
 ]
 
-export const changeLibros = (librosParam: LibroT[]) => {
+export const changeLibros = (librosParam: LibroT[]) => { //Esta función cambia la lista entera de libros por otra que le pases.
     libros = librosParam
 }
 

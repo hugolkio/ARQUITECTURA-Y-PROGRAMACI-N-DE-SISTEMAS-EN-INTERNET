@@ -80,8 +80,8 @@ export const createLibro = (
         return
     }
 
-    const nuevoLibro: LibroT = {
-        id: libros.length > 0 ? Math.max(...libros.map(x => x.id)) + 1 : 1,
+    const nuevoLibro: LibroT = { //Construye el libro nuevo
+        id: libros.length > 0 ? Math.max(...libros.map(x => x.id)) + 1 : 1, //si hay libros, el id es el mayor id existente + 1; si no hay ninguno, es 1.Convierte la lista de libros en una lista solo de ids.
         titulo: titulo.trim(),
         autor: autor.trim(),
         año,
@@ -207,7 +207,7 @@ export const changeLibro = (
         año: año !== undefined ? año : libro.año
     }
 
-    changeLibros(libros.map(x => x.id === id ? libroActualizado : x));
+    changeLibros(libros.map(x => x.id === id ? libroActualizado : x)); //map crea una lista nueva recorriendo la antigua
 
     res.json({
         message: "Libro actualizado",

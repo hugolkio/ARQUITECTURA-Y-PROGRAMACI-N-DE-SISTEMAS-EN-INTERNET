@@ -6,7 +6,7 @@ import estadisticasRoutes from "./routes/estadisticas.routes.js";
 
 const app = express(); //Crea la aplicación del servidor
 
-app.use(express.json()); //middleware
+app.use(express.json()); //middleware. Sin esta línea, req.body estaría vacío.
 
 app.use("/libros", librosRoutes);
 app.use("/prestamos", prestamosRoutes);
